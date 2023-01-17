@@ -13,8 +13,14 @@ public class Pizza {
         this.bill = "";
     }
 
+
+
     public int getPrice(){
-        return this.price;
+        if(isVeg) {
+            return this.price;
+        }else {
+            return this.price + 100;
+        }
     }
 
     public void addExtraCheese(){
