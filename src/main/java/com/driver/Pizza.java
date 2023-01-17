@@ -14,7 +14,6 @@ public class Pizza {
     }
 
 
-
     public int getPrice(){
         if(isVeg) {
             return this.price;
@@ -26,19 +25,23 @@ public class Pizza {
     public void addExtraCheese(){
         // your code goes here
         price += 80;
+        System.out.println("Extra Cheese Added: " + 80);
     }
 
     public void addExtraToppings(){
         // your code goes here
         if(isVeg == true) {
+            System.out.println("Extra Toppings Added: " + 70);
             price += 70;
         }else {
+            System.out.println("Extra Toppings Added: " + 120);
             price += 120;
         }
     }
 
     public void addTakeaway(){
         // your code goes here
+        System.out.println("Paperbag Added: " + 20);
         price += 20;
     }
 
@@ -50,4 +53,5 @@ public class Pizza {
     public void setBill(String bill) {
         this.bill = bill;
     }
+
 }
