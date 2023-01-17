@@ -45,13 +45,19 @@ public class Pizza {
         price += 20;
     }
 
+    public String generateBill(){
+        String billForPizza = String.valueOf(getPrice());
+        setBill(billForPizza);
+        return billForPizza;
+    }
+
     public String getBill(){
         // your code goes here
+        bill = generateBill();
         return this.bill;
     }
 
     public void setBill(String bill) {
         this.bill = bill;
     }
-
 }
