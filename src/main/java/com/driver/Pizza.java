@@ -54,6 +54,7 @@ public class Pizza {
     public String getBill(){
         // your code goes here
         bill = generateBill();
+        System.out.print("Total Bill: ");
         return this.bill;
     }
 
